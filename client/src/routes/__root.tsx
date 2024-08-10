@@ -14,7 +14,7 @@ export const Route = createRootRouteWithContext<{
       <PrimeReactProvider>
         <Outlet />
       </PrimeReactProvider>
-      <TanStackRouterDevtools />
+      {import.meta.env.DEV && <TanStackRouterDevtools />}
     </>
   ),
 });

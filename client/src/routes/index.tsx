@@ -52,7 +52,7 @@ function Index() {
             Chat application built using websockets.
           </CardDescription>
         </CardHeader>
-        <CardContent className="min-w-[32rem]">
+        <CardContent className="md:min-w-[32rem]">
           <form onSubmit={handleSubmit} className="space-y-2">
             <Label htmlFor="username">Username</Label>
             <Input
