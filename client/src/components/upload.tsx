@@ -106,7 +106,7 @@ export const Upload = ({ to, socket }: { to: string; socket: WebSocket }) => {
             Upload your {type === "ANY" ? "files" : type.toLowerCase() + "s"}
           </AlertDialogTitle>
         </AlertDialogHeader>
-        <div className="min-w-[24rem] cursor-pointer h-48 rounded-md bg-muted border border-input border-dashed gap-4">
+        <div className="w-full sm:min-w-[20rem] md:min-w-[24rem] cursor-pointer h-48 rounded-md bg-muted border border-input border-dashed gap-4">
           <Dropzone
             accept={getAcceptTypes(type)}
             onDrop={(acceptedFiles) => {
